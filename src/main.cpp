@@ -3,7 +3,7 @@
 #include <IRremote.hpp>
 #include <Servo.h>
 
-#define DEBUG 0
+#define DEBUG 1
 
 #define PIN_FAN_LEFT 2  // digital
 #define PIN_FAN_RIGHT 3 // digital
@@ -123,7 +123,7 @@ float readDistance(uint8_t tries = 4)
     {
         sum += readDistanceOnce();
     }
-    
+
     return sum / tries;
 }
 
@@ -280,7 +280,7 @@ void stateSearch()
 
 void stateHunt()
 {
-    eyeMotor.write(target.angle);
+    eyeMotor.write(60);
 
     float diff = readDistance() - target.distance;
     diff = abs(diff);
@@ -310,8 +310,8 @@ void loop()
     if (IrReceiver.decode())
     {
         IRData data = IrReceiver.decodedIRData;
-        // Serial.print("Got cmd (hex): ");
-        // Serial.println(IrReceiver.decodedIRData.command, HEX);
+        Serial.print("Got cmd (hex): ");
+        Serial.println(IrReceiver.decodedIRData.command, HEX);
         IrReceiver.resume();
 
         handleRemote(data);
