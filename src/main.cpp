@@ -3,7 +3,7 @@
 #include <IRremote.hpp>
 #include <Servo.h>
 
-#define DEBUG 1
+#define DEBUG 0
 
 #define PIN_FAN_LEFT 2  // digital
 #define PIN_FAN_RIGHT 3 // digital
