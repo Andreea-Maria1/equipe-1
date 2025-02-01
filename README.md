@@ -60,7 +60,7 @@ Une démonstration des outils et technologies mis à disposition, avec un focus 
 |---------------------------------------|--------|
 | 🔴**Impact social et utilité**              | /25     |
 | Répond à un besoin réel et important  | 10     |
-| Contribue à la solution               | 5      |
+| Contribue à la solution               | 10     |
 | Économique et abordable               | 5      |
 | 🔴**Matériaux**                             | /5      |
 | Matériaux courants et sécuritaires    | 5      |
