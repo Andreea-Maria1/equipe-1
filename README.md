@@ -51,7 +51,7 @@ Une démonstration des outils et technologies mis à disposition, avec un focus 
 | Les participants ont confiance en leur projet | 10     |
 | Clarté des idées                      | 5      |
 | 🔴**Thème**                                 | /10     |
-| Respect du thème                      | 5      |
+| Respect du thème                      | 10      |
 | **Total**                             | **/75** |
 
 ## Aspect Développement Durable (25%)
@@ -62,7 +62,7 @@ Une démonstration des outils et technologies mis à disposition, avec un focus 
 | Répond à un besoin réel et important  | 10     |
 | Contribue à la solution               | 10     |
 | Économique et abordable               | 5      |
-| 🔴**Matériaux**                             | /5      |
+| 🔴**Matériaux**                             | /20      |
 | Matériaux courants et sécuritaires    | 5      |
 | Facilement réparable                  | 5      |
 | Recyclable                            | 5      |
@@ -85,6 +85,3 @@ Une démonstration des outils et technologies mis à disposition, avec un focus 
 Un immense merci à Creaform pour son soutien et sa contribution à StarHACK 2025. Leur engagement nous permet de proposer un hackathon enrichissant et de qualité.
 
 📢 Préparez-vous à concevoir LE robot dans cette apocalypse ! 🚀🔥
-
-
-
