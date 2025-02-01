@@ -3,6 +3,8 @@
 #include <IRremote.hpp>
 #include <Servo.h>
 
+#define DEBUG 0
+
 #define PIN_FAN_LEFT 2  // digital
 #define PIN_FAN_RIGHT 3 // digital
 
@@ -14,8 +16,6 @@
 
 #define PIN_IR 11    // digital
 #define PIN_SERVO 10 // analog
-
-#define DEBUG 1
 
 #define CMD_STOP 0x1c    // 5
 #define CMD_FORWARD 0x18 // 2
@@ -280,12 +280,6 @@ void stateSearch()
 
 void stateHunt()
 {
-    // Serial.print("Target found at ");
-    // Serial.print(target.angle);
-    // Serial.print(" degrees, ");
-    // Serial.print((int)target.distance);
-    // Serial.println(" distance");
-
     eyeMotor.write(target.angle);
 
     float diff = readDistance() - target.distance;
@@ -313,29 +307,6 @@ void stateHunt()
 
 void loop()
 {
-    // eyeMotor.write(0);
-    // sleep(SLEEP_1S);
-    // eyeMotor.write(120);
-    // sleep(SLEEP_2S);
-    // return;
-    // eyeMotor.write(angle);
-    // if (angleUp && ++angle == 180)
-    //     angleUp = false;
-
-    // if (!angleUp && --angle == 0)
-    //     angleUp = true;
-
-    // digitalWrite(PIN_FAN_LEFT, HIGH);
-    // LowPower.powerDown(SLEEP_1S, ADC_ON, BOD_ON);
-
-    //rotateClaw(ClawState::STOP);
-    // digitalWrite(PIN_FAN_LEFT, LOW);
-    // LowPower.powerDown(SLEEP_1S, ADC_ON, BOD_ON);
-
-    // char buf[512];
-    // sprintf(buf, "distance: %d", (int)readDistance());
-    // Serial.println(buf);
-
     if (IrReceiver.decode())
     {
         IRData data = IrReceiver.decodedIRData;
